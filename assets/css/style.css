@@ -5,10 +5,10 @@
 body {
     color: #d8d8d8;
     background: linear-gradient(
-        130deg,
-        rgba(12, 68, 138, 1) 0%,
-        rgba(12, 66, 134, 1) 20%,
-        rgba(5, 25, 51, 1) 100%
+        120deg,
+        rgba(152, 44, 250, 1) 0%,
+        rgb(65, 24, 139) 50%,
+        rgba(152, 44, 250, 1) 100%
     );
 }
 
@@ -18,7 +18,8 @@ body {
 }
 
 section.container:nth-child(even) {
-    background: rgba(12, 68, 138, 0.1);
+    background: rgba(95, 95, 95, 0.1);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
 .escondido {
@@ -30,4 +31,9 @@ section.container:nth-child(even) {
 .visivel {
     opacity: 1;
     filter: blur(0);
+}
+
+input {
+    color: #464646;
+    font-family: "Raleway", sans-serif;
 }

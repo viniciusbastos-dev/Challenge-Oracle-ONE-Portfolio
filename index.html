@@ -30,6 +30,12 @@
     <link rel="stylesheet" href="assets/css/sobre/sobre-titulo.css">
     <link rel="stylesheet" href="assets/css/sobre/sobre-descricao.css">
 
+    <link rel="stylesheet" href="assets/css/skills/skill-titulo.css">
+    <link rel="stylesheet" href="assets/css/skills/skill-card.css">
+
+    <link rel="stylesheet" href="assets/css/contato/contato.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-formulario.css">
+
     <link rel="stylesheet" href="assets/css/rodape.css">
 
 </head>
@@ -42,10 +48,10 @@
         </div>
         <nav class="menu">
             <ul class="menu__lista">
-                <li class="menu__item"><a class="menu__link" href="#">Sobre mim</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Skills</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Formação</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Projetos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sobre">Sobre mim</a></li>
+                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+                <li class="menu__item"><a class="menu__link" href="#projetos">Projetos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contato">Contato</a></li>
                 <li class="menu__item">
                     <address>
                         <a class="menu__link menu__link--email"
@@ -59,10 +65,10 @@
     <main>
 
         <section class="banner container">
-            <div class="banner__wrapper">
-                <h2 class="banner__titulo escondido">Olá, meu nome é Vinícius e sou Desenvolvedor Front-End</h2>
-                <p class="banner__texto escondido">Atualmente estou participando no projeto Oracle ONE na Alura.</p>
-                <ul class="banner__lista escondido">
+            <div class="banner__wrapper escondido">
+                <h2 class="banner__titulo">Olá, meu nome é Vinícius e sou Desenvolvedor Front-End</h2>
+                <p class="banner__texto">Atualmente estou participando no projeto Oracle ONE na Alura.</p>
+                <ul class="banner__lista">
                     <li>
                         <a class="banner__link" href="">Github</a>
                     </li>
@@ -76,7 +82,7 @@
             </div>
         </section>
 
-        <section class="sobre container">
+        <section class="sobre container" id="sobre">
 
             <h2 class="sobre__titulo escondido">Sobre mim</h2>
             <p class="sobre__descricao escondido">
@@ -89,6 +95,85 @@
                 dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
                 semper sagittis ligula et lacinia.
             </p>
+
+        </section>
+
+        <section class="skill container" id="skills">
+
+            <h2 class="skill__titulo escondido">Skills</h2>
+
+            <div class="skill__card__wrapper escondido">
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/html_icone.svg" alt="Icone do HTML" class="skill__card__icone">
+                        <h3 class="skill__card__nome">HTML</h3>
+                    </div>
+                </div>
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/javascript_icone.svg" alt="Icone do JavaScript" class="skill__card__icone">
+                        <h3 class="skill__card__nome">JavaScript</h3>
+                    </div>
+                </div>
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/php_icone.svg" alt="Icone do PHP" class="skill__card__icone">
+                        <h3 class="skill__card__nome">PHP</h3>
+                    </div>
+                </div>
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/node_icone.svg" alt="Icone do NodeJS" class="skill__card__icone">
+                        <h3 class="skill__card__nome">NodeJS</h3>
+                    </div>
+                </div>
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/react_icone.svg" alt="Icone do React" class="skill__card__icone">
+                        <h3 class="skill__card__nome">React</h3>
+                    </div>
+                </div>
+                <div class="skill__card">
+                    <div>
+                        <img src="assets/img/css_icone.svg" alt="Icone do CSS" class="skill__card__icone">
+                        <h3 class="skill__card__nome">CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato container" id="contato">
+
+            <img src="assets/img/contato.png" alt="Imagem de um telefone" class="escondido">
+
+            <form action="#" class="contato__formulario escondido">
+
+                <fieldset class="formulario__wrap">
+
+                    <legend class="formulario__titulo">Contato</legend>
+
+                    <label class="formulario__campo" for="nome">
+                        Nome
+                        <input class="" id="nome" type="text">
+                    </label>
+
+                    <label class="formulario__campo" for="email">
+                        E-mail
+                        <input id="email" type="email">
+                    </label>
+
+                    <label class="formulario__campo" for="assunto">
+                        Assunto
+                        <input id="assunto" type="text">
+                    </label>
+
+                    <textarea class="formulario__campo__mensagem" id="mensagem" placeholder="Mensagem" cols="30"
+                        rows="10"></textarea>
+
+                    <input class="formulario__botao" type="submit" value="Enviar Mensagem">
+                </fieldset>
+
+            </form>
 
         </section>
 
