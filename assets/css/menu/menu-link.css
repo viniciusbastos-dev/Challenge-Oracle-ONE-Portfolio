@@ -1,0 +1,8 @@
+.menu__link {
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.menu__link.menu__link--email {
+    font-weight: 700;
+}

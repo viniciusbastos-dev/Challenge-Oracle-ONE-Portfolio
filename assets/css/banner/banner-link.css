@@ -1,0 +1,13 @@
+.banner__link {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.banner__link::after {
+    background-image: url(../../img/icone_link.svg);
+    background-repeat: no-repeat;
+    content: "";
+    height: 24px;
+    width: 24px;
+}
