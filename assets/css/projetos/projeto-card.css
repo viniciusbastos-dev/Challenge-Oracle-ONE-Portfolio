@@ -1,0 +1,35 @@
+.projeto__card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 2.5rem;
+}
+
+.projeto__card__imagem {
+    width: 70%;
+}
+
+.projeto__card__title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.projeto__card__subtitle {
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.projeto__card__link {
+    color: #2a7ae4;
+    padding: 16px;
+    border: 0.5px #2a7ae4 solid;
+    background-color: #ffffff;
+    margin-right: 16px;
+}
+
+.projeto__card__link:nth-child(even) {
+    color: white;
+    background-color: #2a7ae4;
+    margin: 0;
+}
