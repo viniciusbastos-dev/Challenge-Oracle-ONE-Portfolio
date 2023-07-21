@@ -6,3 +6,8 @@
 .menu__link.menu__link--email {
     font-weight: 700;
 }
+@media (max-width: 390px) {
+    .menu__link.menu__link--email {
+        font-weight: 400;
+    }
+}

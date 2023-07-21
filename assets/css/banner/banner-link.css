@@ -11,3 +11,15 @@
     height: 24px;
     width: 24px;
 }
+
+@media (max-width: 390px) {
+    .banner__link {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+    .banner__link::after {
+        height: 16px;
+        width: 16px;
+    }
+    
+}

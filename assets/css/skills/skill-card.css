@@ -12,9 +12,27 @@
     width: 16%;
     max-width: 180px;
     padding: 16px;
+    box-sizing: border-box;
 }
 
 .skill__card__nome {
     font-weight: 700;
     margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .skill__card__wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .skill__card {
+        width: 25%;
+        height: 86px;
+    }
+}
+
+@media (max-width: 390px) {
+    .skill__card {
+        width: 130px;
+    }
 }

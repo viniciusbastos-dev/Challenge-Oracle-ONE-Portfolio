@@ -2,3 +2,18 @@
     display: flex;
     gap: 2rem;
 }
+
+@media (max-width: 768px) {
+    .menu__lista > .menu__item {
+        display: none;
+    }
+    .menu__lista > .menu__item:last-child {
+        display: inline;
+    }
+}
+
+@media (max-width: 390px) {
+    .menu__item {
+        font-size: 14px;
+    }
+}
