@@ -8,8 +8,6 @@ const observador = new IntersectionObserver(
             if (entrada.isIntersecting) {
                 // Adiciona a classe "visivel" ao elemento alvo da entrada
                 entrada.target.classList.add("visivel");
-            } else {
-                entrada.target.classList.remove("visivel");
             }
         });
     },
